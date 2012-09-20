@@ -8,7 +8,5 @@ def counter(v_in)
 end
 
 a = ARGV[0].nil? ? "1" : ARGV[0]
-while guess = STDIN.gets
-  a = counter(a)
-  puts "#{a} size:#{a.size}"
-end
+a = counter(a)
+puts a
